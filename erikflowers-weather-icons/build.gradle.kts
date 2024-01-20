@@ -26,7 +26,7 @@ publishing {
     repositories {
         maven {
             name = "local"
-            url = uri("file://${System.getenv("DEPLOY_DIR")}")
+            url = uri("file://${project.gradle.gradleUserHomeDir.parent}/.m2/repository")
         }
     }
 }
