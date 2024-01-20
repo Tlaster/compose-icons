@@ -21,12 +21,12 @@ repositories {
 ```
 
 ```kotlin
-implementation("com.github.benjaminhalko.compose-icons:{ICON_PACK}:1.2.0")
+implementation("com.github.benjaminhalko.compose-icons:{ICON_PACK}:1.2.1")
 ```
 
 ** `{ICON_PACK}` is a placeholder, you should replace it with your icon pack of choose.
 
-example: `com.github.benjaminhalko.compose-icons:font-awesome:1.2.0`
+example: `com.github.BenjaminHalko.compose-icons:font-awesome:1.2.1`
 
 ## Example
 
@@ -57,19 +57,19 @@ You can find all code reference in the docs of the icon packs bellow.
 
 ```toml
 [versions]
-composeIcons = "1.2.0"
+composeIcons = "1.2.1"
 
 [libraries]
-composeIcons-cssGg = { module = "br.com.devsrsouza.compose.icons:css-gg", version.ref = "composeIcons" }
-composeIcons-weatherIcons = { module = "br.com.devsrsouza.compose.icons:erikflowers-weather-icons", version.ref = "composeIcons" }
-composeIcons-evaIcons = { module = "br.com.devsrsouza.compose.icons:eva-icons", version.ref = "composeIcons" }
-composeIcons-feather = { module = "br.com.devsrsouza.compose.icons:feather", version.ref = "composeIcons" }
-composeIcons-fontAwesome = { module = "br.com.devsrsouza.compose.icons:font-awesome", version.ref = "composeIcons" }
-composeIcons-lineAwesome = { module = "br.com.devsrsouza.compose.icons:line-awesome", version.ref = "composeIcons" }
-composeIcons-linea = { module = "br.com.devsrsouza.compose.icons:linea", version.ref = "composeIcons" }
-composeIcons-octicons = { module = "br.com.devsrsouza.compose.icons:octicons", version.ref = "composeIcons" }
-composeIcons-simpleIcons = { module = "br.com.devsrsouza.compose.icons:simple-icons", version.ref = "composeIcons" }
-composeIcons-tablerIcons = { module = "br.com.devsrsouza.compose.icons:tabler-icons", version.ref = "composeIcons" }
+composeIcons-cssGg = { module = "com.github.BenjaminHalko.compose-icons:css-gg", version.ref = "composeIcons" }
+composeIcons-weatherIcons = { module = "com.github.BenjaminHalko.compose-icons:erikflowers-weather-icons", version.ref = "composeIcons" }
+composeIcons-evaIcons = { module = "com.github.BenjaminHalko.compose-icons:eva-icons", version.ref = "composeIcons" }
+composeIcons-feather = { module = "com.github.BenjaminHalko.compose-icons:feather", version.ref = "composeIcons" }
+composeIcons-fontAwesome = { module = "com.github.BenjaminHalko.compose-icons:font-awesome", version.ref = "composeIcons" }
+composeIcons-lineAwesome = { module = "com.github.BenjaminHalko.compose-icons:line-awesome", version.ref = "composeIcons" }
+composeIcons-linea = { module = "com.github.BenjaminHalko.compose-icons:linea", version.ref = "composeIcons" }
+composeIcons-octicons = { module = "com.github.BenjaminHalko.compose-icons:octicons", version.ref = "composeIcons" }
+composeIcons-simpleIcons = { module = "com.github.BenjaminHalko.compose-icons:simple-icons", version.ref = "composeIcons" }
+composeIcons-tablerIcons = { module = "com.github.BenjaminHalko.compose-icons:tabler-icons", version.ref = "composeIcons" }
 ```
 
 ## Roadmap
