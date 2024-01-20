@@ -21,3 +21,12 @@ android {
         //versionName = "1.0"
     }
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "local"
+            url = uri("file://${System.getenv("DEPLOY_DIR")}")
+        }
+    }
+}
