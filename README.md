@@ -16,17 +16,17 @@ Compose Multiplatform icons is a pack of libraries that provide well known Icon 
 Add the project repository:
 ```kotlin
 repositories {
-    mavenCentral()
+    maven("https://jitpack.io")
 }
 ```
 
 ```kotlin
-implementation("br.com.devsrsouza.compose.icons:{ICON_PACK}:1.1.0")
+implementation("com.github.benjaminhalko.compose-icons:{ICON_PACK}:1.2.0")
 ```
 
 ** `{ICON_PACK}` is a placeholder, you should replace it with your icon pack of choose.
 
-example: `br.com.devsrsouza.compose.icons:font-awesome:1.1.0`
+example: `com.github.benjaminhalko.compose-icons:font-awesome:1.2.0`
 
 ## Example
 
@@ -57,7 +57,7 @@ You can find all code reference in the docs of the icon packs bellow.
 
 ```toml
 [versions]
-composeIcons = "1.1.0"
+composeIcons = "1.2.0"
 
 [libraries]
 composeIcons-cssGg = { module = "br.com.devsrsouza.compose.icons:css-gg", version.ref = "composeIcons" }
