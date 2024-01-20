@@ -1,0 +1,22 @@
+name: Upgrade Icons
+on:
+  workflow_dispatch:
+
+jobs:
+  upgrade-icons:
+    name: Upgrade Icons
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Sources
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: 11
+          distribution: 'temurin'
+      - name: Upgrade Icons
+        run: ./gradlew upgradeIcons
+      - name: Commit and Push
+        run: git commit -am "Upgrade Icons" && git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
