@@ -16,3 +16,12 @@ plugins {
     id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.13.0"
 }
 
+subprojects {
+    tasks.create("upgradeIcons") {
+        doLast {
+            exec {
+                commandLine("kotlinc", "-script", "${projectDir}/generate-source.main.kts")
+            }
+        }
+    }
+}
