@@ -1,12 +1,8 @@
 plugins {
-    //kotlin("multiplatform")
     id("com.android.library")
     id("kotlin-android")
-    id("org.jetbrains.compose")
     id("com.vanniktech.maven.publish")
 }
-
-// setupModuleForComposeMultiplatform()
 
 android {
     namespace = "compose.icons.fontawesome"
@@ -14,9 +10,6 @@ android {
     defaultConfig {
         minSdk = 21
         targetSdk = 33
-
-        //versionCode = 1
-        //versionName = "1.0"
     }
 }
 

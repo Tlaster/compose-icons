@@ -2,4 +2,3 @@ jdk:
   - openjdk11
 install:
   - ./gradlew publishMavenPublicationToLocalRepository
-  - ./gradlew publishToMavenLocal
