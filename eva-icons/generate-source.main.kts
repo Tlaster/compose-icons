@@ -62,7 +62,7 @@ iconsDir.walkTopDown().filter { it.extension == "svg" }
         it.renameTo(newFile)
     }
 
-val srcDir = File("src/commonMain/kotlin").apply { mkdirs() }
+val srcDir = File("src/main/kotlin").apply { mkdirs() }
 srcDir.deleteRecursively()
 srcDir.mkdirs()
 
@@ -93,7 +93,7 @@ println("Copying LICENSE from the Icon pack")
 val licensePath = "LICENSE.txt"
 val licenseFile = File(repoCloneDir, licensePath)
 
-val resDir = File("src/commonMain/resources").makeDirs()
+val resDir = File("src/main/resources").makeDirs()
 val licenseInResource = File(resDir, "eva-license.txt")
 
 licenseFile.copyTo(licenseInResource, overwrite = true)

@@ -28,7 +28,9 @@ data class Icon(var title: String, var slug: String?, var hex: String, var sourc
 data class SimpleIcons(var icons: List<Icon>)
 
 val ignoredIcons = listOf(
-    "Elsevier"
+    "Elsevier",
+    "Lerna",
+    "Pubg",
 )
 
 val githubId = "simple-icons/simple-icons"
@@ -104,7 +106,7 @@ fun replacePathName(path: String): String {
 
 val svgBaseUrl = "$rawGithubRepository/icons/%s.svg"
 
-val srcDir = File("src/commonMain/kotlin").apply { mkdirs() }
+val srcDir = File("src/main/kotlin").apply { mkdirs() }
 srcDir.deleteRecursively()
 srcDir.mkdirs()
 
@@ -124,7 +126,7 @@ println("Copying LICENSE from the Icon pack")
 val licensePath = "LICENSE.md"
 val licenseFile = File(repoCloneDir, licensePath)
 
-val resDir = File("src/commonMain/resources").makeDirs()
+val resDir = File("src/main/resources").makeDirs()
 val licenseInResource = File(resDir, "simpleicons-license.txt")
 
 licenseFile.copyTo(licenseInResource, overwrite = true)

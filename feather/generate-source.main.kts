@@ -57,7 +57,7 @@ fun replacePathName(svgPath: String): String {
     return previousNames.fold(svgPath) { path, (old, new) -> path.replace(new, old) }
 }
 
-val srcDir = File("src/commonMain/kotlin").apply { mkdirs() }
+val srcDir = File("src/main/kotlin").apply { mkdirs() }
 srcDir.deleteRecursively()
 srcDir.mkdirs()
 
@@ -77,7 +77,7 @@ println("Copying LICENSE from the Icon pack")
 val licensePath = "LICENSE"
 val licenseFile = File(repoCloneDir, licensePath)
 
-val resDir = File("src/commonMain/resources").makeDirs()
+val resDir = File("src/main/resources").makeDirs()
 val licenseInResource = File(resDir, "feather-license.txt")
 
 licenseFile.copyTo(licenseInResource, overwrite = true)

@@ -54,7 +54,7 @@ fun replacePathName(path: String): String {
     return path.replace("_", "-")
 }
 
-val srcDir = File("src/commonMain/kotlin").apply { mkdirs() }
+val srcDir = File("src/main/kotlin").apply { mkdirs() }
 srcDir.deleteRecursively()
 srcDir.mkdirs()
 
@@ -74,7 +74,7 @@ println("Copying LICENSE from the Icon pack")
 val licensePath = "LICENSE.md"
 val licenseFile = File(repoCloneDir, licensePath)
 
-val resDir = File("src/commonMain/resources").makeDirs()
+val resDir = File("src/main/resources").makeDirs()
 val licenseInResource = File(resDir, "line-awesome-license.txt")
 
 licenseFile.copyTo(licenseInResource, overwrite = true)

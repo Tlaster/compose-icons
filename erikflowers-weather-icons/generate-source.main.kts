@@ -55,7 +55,7 @@ fun replacePathName(path: String): String {
     return path.replace(svgName, "wi-$svgName").replace("_", "-")
 }
 
-val srcDir = File("src/commonMain/kotlin").apply { mkdirs() }
+val srcDir = File("src/main/kotlin").apply { mkdirs() }
 srcDir.deleteRecursively()
 srcDir.mkdirs()
 
