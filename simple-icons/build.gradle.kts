@@ -1,7 +1,3 @@
-import org.gradle.kotlin.dsl.dependencies
-import org.gradle.kotlin.dsl.implementation
-import org.gradle.kotlin.dsl.libs
-
 plugins {
     id("com.android.library")
     id("kotlin-android")
