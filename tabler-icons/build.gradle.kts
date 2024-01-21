@@ -9,6 +9,7 @@ plugins {
 // setupModuleForComposeMultiplatform()
 
 android {
+    namespace = "compose.icons.tablericons"
     compileSdk = 33
     defaultConfig {
         minSdk = 21

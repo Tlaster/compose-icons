@@ -9,6 +9,7 @@ plugins {
 // setupModuleForComposeMultiplatform()
 
 android {
+    namespace = "compose.icons.octicons"
     compileSdk = 33
     defaultConfig {
         minSdk = 21

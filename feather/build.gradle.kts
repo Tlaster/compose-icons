@@ -9,6 +9,7 @@ plugins {
 // setupModuleForComposeMultiplatform()
 
 android {
+    namespace = "compose.icons.feather"
     compileSdk = 33
     defaultConfig {
         minSdk = 21
