@@ -13,16 +13,16 @@ dependencyResolutionManagement {
 rootProject.name = "compose-icons"
 
 include(
-    //":simple-icons",
-    //":feather",
-    //":tabler-icons",
-    //":eva-icons",
+    ":simple-icons",
+    ":feather",
+    ":tabler-icons",
+    ":eva-icons",
     ":font-awesome",
     ":erikflowers-weather-icons",
-    //":line-awesome",
-    //":linea",
-    //":octicons",
-    //":css-gg"
+    ":line-awesome",
+    ":linea",
+    ":octicons",
+    ":css-gg"
 )
 
 // include(":sample")
