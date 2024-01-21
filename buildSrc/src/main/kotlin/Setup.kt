@@ -20,7 +20,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 private fun BaseExtension.setupAndroid() {
-    compileSdkVersion(33)
+    compileSdk = 33
     defaultConfig {
         minSdk = 21
         targetSdk = 33

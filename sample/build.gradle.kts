@@ -13,7 +13,7 @@ plugins {
 
 android {
     namespace = "br.devsrsouza.compose.icons.sample"
-    compileSdkVersion(33)
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "br.devsrsouza.compose.icons.sample"

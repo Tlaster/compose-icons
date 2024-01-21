@@ -1,6 +1,7 @@
 plugins {
     //kotlin("multiplatform")
     id("com.android.library")
+    id("kotlin-android")
     id("org.jetbrains.compose")
     id("com.vanniktech.maven.publish")
 }
@@ -8,11 +9,7 @@ plugins {
 // setupModuleForComposeMultiplatform()
 
 android {
-    namespace = "compose.icons.erikflowersweathericons"
-}
-
-android {
-    compileSdkVersion(33)
+    compileSdk = 33
     defaultConfig {
         minSdk = 21
         targetSdk = 33
@@ -20,6 +17,10 @@ android {
         //versionCode = 1
         //versionName = "1.0"
     }
+}
+
+dependencies {
+    implementation(libs.ui.android)
 }
 
 publishing {

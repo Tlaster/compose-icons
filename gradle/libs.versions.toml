@@ -8,6 +8,7 @@ appCompat = "1.5.1"
 composeActivity = "1.6.1"
 
 kotlin = "1.8.10"
+uiAndroid = "1.5.4"
 
 [libraries]
 plugin-android = { module = "com.android.tools.build:gradle", version.ref = "plugin-android" }
@@ -21,3 +22,4 @@ compose-activity = { module = "androidx.activity:activity-compose", version.ref 
 
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
