@@ -21,12 +21,12 @@ repositories {
 ```
 
 ```kotlin
-implementation("com.github.benjaminhalko.compose-icons:{ICON_PACK}:1.2.5")
+implementation("com.github.benjaminhalko.compose-icons:{ICON_PACK}:{VERSION}")
 ```
 
 ** `{ICON_PACK}` is a placeholder, you should replace it with your icon pack of choose.
 
-example: `com.github.BenjaminHalko.compose-icons:font-awesome:1.2.5`
+example: `com.github.BenjaminHalko.compose-icons:font-awesome:{VERSION}`
 
 ## Example
 
@@ -57,7 +57,7 @@ You can find all code reference in the docs of the icon packs bellow.
 
 ```toml
 [versions]
-composeIcons = "1.2.5"
+composeIcons = "{VERSION}"
 
 [libraries]
 composeIcons-cssGg = { module = "com.github.BenjaminHalko.compose-icons:css-gg", version.ref = "composeIcons" }
