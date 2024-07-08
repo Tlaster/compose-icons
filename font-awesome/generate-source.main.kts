@@ -28,7 +28,7 @@ val buildDir = File("build/").makeDirs()
 
 val githubId = "FortAwesome/Font-Awesome"
 val repository = "https://github.com/$githubId"
-val version = "6.5.1"
+val version = "6.5.2"
 val rawGithubRepository = "https://raw.githubusercontent.com/$githubId/$version"
 val blobGithubRepository = "$repository/blob/$version"
 
