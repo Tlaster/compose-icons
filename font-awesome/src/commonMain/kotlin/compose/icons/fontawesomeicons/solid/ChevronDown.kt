@@ -16,23 +16,21 @@ public val SolidGroup.ChevronDown: ImageVector
         if (_chevronDown != null) {
             return _chevronDown!!
         }
-        _chevronDown = Builder(name = "ChevronDown", defaultWidth = 448.0.dp, defaultHeight =
-                512.0.dp, viewportWidth = 448.0f, viewportHeight = 512.0f).apply {
+        _chevronDown = Builder(name = "ChevronDown", defaultWidth = 512.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 512.0f, viewportHeight = 512.0f).apply {
             path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(207.03f, 381.48f)
-                lineTo(12.69f, 187.13f)
-                curveToRelative(-9.37f, -9.37f, -9.37f, -24.57f, 0.0f, -33.94f)
-                lineToRelative(22.67f, -22.67f)
-                curveToRelative(9.36f, -9.36f, 24.52f, -9.38f, 33.9f, -0.04f)
-                lineTo(224.0f, 284.51f)
-                lineToRelative(154.74f, -154.02f)
-                curveToRelative(9.38f, -9.34f, 24.54f, -9.32f, 33.9f, 0.04f)
-                lineToRelative(22.67f, 22.67f)
-                curveToRelative(9.37f, 9.37f, 9.37f, 24.57f, 0.0f, 33.94f)
-                lineTo(240.97f, 381.48f)
-                curveToRelative(-9.37f, 9.37f, -24.57f, 9.37f, -33.94f, 0.0f)
+                moveTo(233.4f, 406.6f)
+                curveToRelative(12.5f, 12.5f, 32.8f, 12.5f, 45.3f, 0.0f)
+                lineToRelative(192.0f, -192.0f)
+                curveToRelative(12.5f, -12.5f, 12.5f, -32.8f, 0.0f, -45.3f)
+                reflectiveCurveToRelative(-32.8f, -12.5f, -45.3f, 0.0f)
+                lineTo(256.0f, 338.7f)
+                lineTo(86.6f, 169.4f)
+                curveToRelative(-12.5f, -12.5f, -32.8f, -12.5f, -45.3f, 0.0f)
+                reflectiveCurveToRelative(-12.5f, 32.8f, 0.0f, 45.3f)
+                lineToRelative(192.0f, 192.0f)
                 close()
             }
         }

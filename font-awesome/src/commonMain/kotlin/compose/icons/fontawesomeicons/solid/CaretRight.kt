@@ -16,18 +16,20 @@ public val SolidGroup.CaretRight: ImageVector
         if (_caretRight != null) {
             return _caretRight!!
         }
-        _caretRight = Builder(name = "CaretRight", defaultWidth = 192.0.dp, defaultHeight =
-                512.0.dp, viewportWidth = 192.0f, viewportHeight = 512.0f).apply {
+        _caretRight = Builder(name = "CaretRight", defaultWidth = 256.0.dp, defaultHeight =
+                512.0.dp, viewportWidth = 256.0f, viewportHeight = 512.0f).apply {
             path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = NonZero) {
-                moveTo(0.0f, 384.66f)
-                verticalLineTo(127.34f)
-                curveToRelative(0.0f, -17.82f, 21.54f, -26.74f, 34.14f, -14.14f)
-                lineToRelative(128.66f, 128.66f)
-                curveToRelative(7.81f, 7.81f, 7.81f, 20.47f, 0.0f, 28.28f)
-                lineTo(34.14f, 398.8f)
-                curveTo(21.54f, 411.4f, 0.0f, 402.48f, 0.0f, 384.66f)
+                moveTo(246.6f, 278.6f)
+                curveToRelative(12.5f, -12.5f, 12.5f, -32.8f, 0.0f, -45.3f)
+                lineToRelative(-128.0f, -128.0f)
+                curveToRelative(-9.2f, -9.2f, -22.9f, -11.9f, -34.9f, -6.9f)
+                reflectiveCurveToRelative(-19.8f, 16.6f, -19.8f, 29.6f)
+                lineToRelative(0.0f, 256.0f)
+                curveToRelative(0.0f, 12.9f, 7.8f, 24.6f, 19.8f, 29.6f)
+                reflectiveCurveToRelative(25.7f, 2.2f, 34.9f, -6.9f)
+                lineToRelative(128.0f, -128.0f)
                 close()
             }
         }
